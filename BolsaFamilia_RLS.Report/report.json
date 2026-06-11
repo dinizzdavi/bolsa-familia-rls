@@ -1,0 +1,177 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2},\"customTheme\":{\"name\":\"Bolsa_Fam_lia___Dark_Elegante43720386023549307.json\",\"version\":\"5.57\",\"type\":1}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Bolsa_Fam_lia___Dark_Elegante43720386023549307.json",
+            "path": "Bolsa_Fam_lia___Dark_Elegante43720386023549307.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Detalhe por Região/Estado",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b88a1262221a08be955d",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"89000672d209eca728c0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":474.65045592705167,\"y\":141.03343465045594,\"z\":3,\"width\":320,\"height\":79.75683890577508,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Detalhe Por Região\",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"24pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 79.76,
+          "width": 320.00,
+          "x": 474.65,
+          "y": 141.03,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"c7ec7495603a06eca978\",\"layouts\":[{\"id\":0,\"position\":{\"x\":731.4285714285714,\"y\":369.6048632218845,\"z\":0,\"width\":548.5714285714286,\"height\":350.1519756838906,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"fato_bolsa_familia.UF\"},{\"queryRef\":\"fato_bolsa_familia.Total de Municípios\"},{\"queryRef\":\"fato_bolsa_familia.Total de Beneficiários\"},{\"queryRef\":\"fato_bolsa_familia.Total de Repasses\"},{\"queryRef\":\"fato_bolsa_familia.Ticket Médio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"UF\"},\"Name\":\"fato_bolsa_familia.UF\",\"NativeReferenceName\":\"UF\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Municípios\"},\"Name\":\"fato_bolsa_familia.Total de Municípios\",\"NativeReferenceName\":\"Total de Municípios\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Beneficiários\"},\"Name\":\"fato_bolsa_familia.Total de Beneficiários\",\"NativeReferenceName\":\"Total de Beneficiários\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Repasses\"},\"Name\":\"fato_bolsa_familia.Total de Repasses\",\"NativeReferenceName\":\"Total de Repasses\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Ticket Médio\"},\"Name\":\"fato_bolsa_familia.Ticket Médio\",\"NativeReferenceName\":\"Ticket Médio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Municípios\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 350.15,
+          "width": 548.57,
+          "x": 731.43,
+          "y": 369.60,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"cb2cdd187316002aa9d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":369.6048632218845,\"z\":1,\"width\":537.8723404255319,\"height\":350.1519756838906,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"fato_bolsa_familia.NOME MUNICÍPIO\",\"active\":true}],\"Y\":[{\"queryRef\":\"fato_bolsa_familia.Total de Repasses\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"NOME MUNICÍPIO\"},\"Name\":\"fato_bolsa_familia.NOME MUNICÍPIO\",\"NativeReferenceName\":\"NOME MUNICÍPIO\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Repasses\"},\"Name\":\"fato_bolsa_familia.Total de Repasses\",\"NativeReferenceName\":\"Total de Repasses\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Repasses\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"fato_bolsa_familia\"}},\"Property\":\"NOME MUNICÍPIO\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"NOME MUNICÍPIO\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Repasses\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"NOME MUNICÍPIO\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 350.15,
+          "width": 537.87,
+          "x": 0.00,
+          "y": 369.60,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"ec1c95cfda50da2954b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":537.8723404255319,\"y\":369.6048632218845,\"z\":2,\"width\":193.55623100303953,\"height\":197.4468085106383,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dim_regioes.Regiao\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_regioes\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Regiao\"},\"Name\":\"dim_regioes.Regiao\",\"NativeReferenceName\":\"Regiao\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_regioes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Regiao\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Sudeste'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 197.45,
+          "width": 193.56,
+          "x": 537.87,
+          "y": 369.60,
+          "z": 2.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Programa Bolsa Familia",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f978a81880e9bb77d370",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"31d554c6d239d10c72d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":465.89665653495445,\"y\":540.790273556231,\"z\":6,\"width\":337.50759878419456,\"height\":178.96656534954408,\"tabOrder\":5}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"fato_bolsa_familia.Ano\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Ano\"},\"Name\":\"fato_bolsa_familia.Ano\",\"NativeReferenceName\":\"Ano\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Ano\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'2026'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 178.97,
+          "width": 337.51,
+          "x": 465.90,
+          "y": 540.79,
+          "z": 6.00
+        },
+        {
+          "config": "{\"name\":\"328103c132b35e462a46\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":4}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"4888c2d1202d38c27c1a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":45.714285714285715,\"y\":540.790273556231,\"z\":5,\"width\":280.1215805471125,\"height\":178.96656534954408,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dim_regioes.Regiao\",\"active\":true}],\"Y\":[{\"queryRef\":\"fato_bolsa_familia.Total de Repasses\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dim_regioes\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Regiao\"},\"Name\":\"dim_regioes.Regiao\",\"NativeReferenceName\":\"Regiao\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Repasses\"},\"Name\":\"fato_bolsa_familia.Total de Repasses\",\"NativeReferenceName\":\"Total de Repasses\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Repasses\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 178.97,
+          "width": 280.12,
+          "x": 45.71,
+          "y": 540.79,
+          "z": 5.00
+        },
+        {
+          "config": "{\"name\":\"6db4c3d2b050dea90b40\",\"layouts\":[{\"id\":0,\"position\":{\"x\":325.83586626139817,\"y\":206.20060790273558,\"z\":1,\"width\":279.1489361702128,\"height\":280.1215805471125,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"fato_bolsa_familia.Total de Beneficiários\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Beneficiários\"},\"Name\":\"fato_bolsa_familia.Total de Beneficiários\",\"NativeReferenceName\":\"Total de Beneficiários\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Beneficiários\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.12,
+          "width": 279.15,
+          "x": 325.84,
+          "y": 206.20,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"81d93c507abb8182358c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":351.1246200607903,\"y\":39.87841945288754,\"z\":8,\"width\":567.0516717325228,\"height\":93.37386018237082,\"tabOrder\":7}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Programa Bolsa Família \",\"textStyle\":{\"fontSize\":\"28pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"Visão Geral Nacional\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"horizontalTextAlignment\":\"center\"},{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 93.37,
+          "width": 567.05,
+          "x": 351.12,
+          "y": 39.88,
+          "z": 8.00
+        },
+        {
+          "config": "{\"name\":\"880f64240128a158bae6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":206.20060790273558,\"z\":0,\"width\":280.1215805471125,\"height\":280.1215805471125,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"fato_bolsa_familia.Ticket Médio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Ticket Médio\"},\"Name\":\"fato_bolsa_familia.Ticket Médio\",\"NativeReferenceName\":\"Ticket Médio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Ticket Médio\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.12,
+          "width": 280.12,
+          "x": 0.00,
+          "y": 206.20,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"cd414d2707e29ca6d821\",\"layouts\":[{\"id\":0,\"position\":{\"x\":999.8784194528876,\"y\":205.22796352583586,\"z\":3,\"width\":280.1215805471125,\"height\":280.1215805471125,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"fato_bolsa_familia.Total de Repasses\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Repasses\"},\"Name\":\"fato_bolsa_familia.Total de Repasses\",\"NativeReferenceName\":\"Total de Repasses\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Repasses\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.12,
+          "width": 280.12,
+          "x": 999.88,
+          "y": 205.23,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"d6e08bce1c8397c80cbe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":663.3434650455928,\"y\":206.20060790273558,\"z\":2,\"width\":280.1215805471125,\"height\":279.1489361702128,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"fato_bolsa_familia.Total de Municípios\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Municípios\"},\"Name\":\"fato_bolsa_familia.Total de Municípios\",\"NativeReferenceName\":\"Total de Municípios\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total de Municípios\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 279.15,
+          "width": 280.12,
+          "x": 663.34,
+          "y": 206.20,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"db00ac583a0eae9c9832\",\"layouts\":[{\"id\":0,\"position\":{\"x\":943.4650455927052,\"y\":540.790273556231,\"z\":7,\"width\":280.1215805471125,\"height\":178.96656534954408,\"tabOrder\":6}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"fato_bolsa_familia.Mês\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"fato_bolsa_familia\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Mês\"},\"Name\":\"fato_bolsa_familia.Mês\",\"NativeReferenceName\":\"Mês\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 178.97,
+          "width": 280.12,
+          "x": 943.47,
+          "y": 540.79,
+          "z": 7.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Bolsa_Fam_lia___Dark_Elegante43720386023549307.json"
+}
